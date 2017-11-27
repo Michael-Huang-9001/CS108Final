@@ -39,11 +39,57 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 298.0
-margin/bottom = 327.0
+margin/right = 290.0
+margin/bottom = 320.0
 alignment = 0
 
-[node name="ItsAMatch" type="Sprite" parent="ScrollContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="ScrollContainer/VBoxContainer"]
+
+visibility/self_opacity = 0.0
+rect/min_size = Vector2( 290, 320 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 290.0
+margin/bottom = 320.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/PanelContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 7.0
+margin/top = 153.0
+margin/right = 283.0
+margin/bottom = 167.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="ScrollContainer/VBoxContainer/PanelContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 18.0
+margin/top = 135.0
+margin/right = 52.0
+margin/bottom = 149.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ItsAMatch" type="Sprite" parent="ScrollContainer/VBoxContainer/PanelContainer"]
 
 transform/pos = Vector2( 144.644, 69.757 )
 transform/scale = Vector2( 0.063399, 0.0693599 )
