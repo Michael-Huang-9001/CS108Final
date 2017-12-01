@@ -7,7 +7,9 @@ onready var logo = get_parent().get_node("ScrollContainer/VBoxContainer/ItsAMatc
 
 onready var c1 = File.new()
 onready var c2 = File.new()
-var counter = 0
+var press1 = 0
+var press2 = 0
+var stage = 0
 var grey
 var blue
 
@@ -25,23 +27,55 @@ func _ready():
 	button1.connect("pressed", self, "on_pressed1")
 	button2.connect("pressed", self, "on_pressed2")
 	button1.set_text("Hi, how's your day?")
-	button2.set_text("Can I have your number?")
+	button2.set_text("Do you like sexual intercourse?  ( ͡° ͜ʖ ͡°)")
 	pass
 
 func on_pressed1():
 	logo.hide()
+	press1 = 1 # Button 1 is press, reset to 0 every check
 	
-	
-	var nextButton = Button.new()
-	nextButton.set_owner(get_tree().get_edited_scene_root())
-	
-	nextButton.set_text("New Button")
-	get_parent().get_node("ScrollContainer/VBoxContainer").add_child(nextButton)
+	if(stage == 0):
+		if(press1 == 1):
+			press1 = 0;
+			var ask = Button.new()
+			ask.set_owner(get_tree().get_edited_scene_root())
+			ask.set_text(button1.get_text())
+			ask.set('custom_styles/normal', blue)
+			ask.set_ignore_mouse(true)
+			ask.set_anchor(MARGIN_LEFT, 1, false) 
+			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
+			
+			var reply = Button.new()
+			reply.set_owner(get_tree().get_edited_scene_root())
+			reply.set_text("Bad, can you make it better?")
+			reply.set("custom_colors/font_color",Color(0,0,0))
+			reply.set('custom_styles/normal', grey)
+			reply.set_ignore_mouse(true)
+			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
+			
+			button1.set_text("How bad? My ability is limited")
+			button2.set_text("I know why")
+		if(press2 == 1):
+			press2 == 0
+			var ask = Button.new()
+			ask.set_owner(get_tree().get_edited_scene_root())
+			ask.set_text(button1.get_text())
+			ask.set('custom_styles/normal', blue)
+			ask.set_ignore_mouse(true)
+			ask.set_anchor(MARGIN_LEFT, 1, false) 
+			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
+			
+			var reply = Button.new()
+			reply.set_owner(get_tree().get_edited_scene_root())
+			reply.set_text("You wot m8?")
+			reply.set("custom_colors/font_color",Color(0,0,0))
+			reply.set('custom_styles/normal', grey)
+			reply.set_ignore_mouse(true)
+			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
+			
+			button1.set_text("I'm taking a Bio class")
+			button2.set_text("R u a guy?")
 
 func on_pressed2():
 	logo.hide()
-	print("false")
-
-	button1.set_text("Do you like sexual intercourse?")
-	button2.set_text("\n\nI'm sick")
-	counter = counter + 1
+	press2 = 1 # Button 2 is press, reset to 0 every check

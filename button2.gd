@@ -4,6 +4,7 @@ extends Button
 # var a = 2
 var b1
 var b2
+var buttonIsPressed = false
 
 func _ready():
 	# Called every time the node is added to the scene.
