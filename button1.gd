@@ -32,50 +32,52 @@ func _ready():
 
 func on_pressed1():
 	logo.hide()
-	press1 = 1 # Button 1 is press, reset to 0 every check
+	#press1 = 1 # Button 1 is press, reset to 0 every check
 	
 	if(stage == 0):
-		if(press1 == 1):
-			press1 = 0;
-			var ask = Button.new()
-			ask.set_owner(get_tree().get_edited_scene_root())
-			ask.set_text(button1.get_text())
-			ask.set('custom_styles/normal', blue)
-			ask.set_ignore_mouse(true)
-			ask.set_anchor(MARGIN_LEFT, 1, false) 
-			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
+		
+		press1 = 0;
+		var ask = Button.new()
+		ask.set_owner(get_tree().get_edited_scene_root())
+		ask.set_text(button1.get_text())
+		ask.set('custom_styles/normal', blue)
+		ask.set_ignore_mouse(true)
+		ask.set_anchor(MARGIN_LEFT, 1, false) 
+		get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
 			
-			var reply = Button.new()
-			reply.set_owner(get_tree().get_edited_scene_root())
-			reply.set_text("Bad, can you make it better?")
-			reply.set("custom_colors/font_color",Color(0,0,0))
-			reply.set('custom_styles/normal', grey)
-			reply.set_ignore_mouse(true)
-			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
+		var reply = Button.new()
+		reply.set_owner(get_tree().get_edited_scene_root())
+		reply.set_text("Bad, can you make it better?")
+		reply.set("custom_colors/font_color",Color(0,0,0))
+		reply.set('custom_styles/normal', grey)
+		reply.set_ignore_mouse(true)
+		get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
 			
-			button1.set_text("How bad? My ability is limited")
-			button2.set_text("I know why")
-		if(press2 == 1):
-			press2 == 0
-			var ask = Button.new()
-			ask.set_owner(get_tree().get_edited_scene_root())
-			ask.set_text(button1.get_text())
-			ask.set('custom_styles/normal', blue)
-			ask.set_ignore_mouse(true)
-			ask.set_anchor(MARGIN_LEFT, 1, false) 
-			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
-			
-			var reply = Button.new()
-			reply.set_owner(get_tree().get_edited_scene_root())
-			reply.set_text("You wot m8?")
-			reply.set("custom_colors/font_color",Color(0,0,0))
-			reply.set('custom_styles/normal', grey)
-			reply.set_ignore_mouse(true)
-			get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
-			
-			button1.set_text("I'm taking a Bio class")
-			button2.set_text("R u a guy?")
+		button1.set_text("How bad? My ability is limited")
+		button2.set_text("I know why")
+		
 
 func on_pressed2():
 	logo.hide()
-	press2 = 1 # Button 2 is press, reset to 0 every check
+	if(stage == 0):
+		var ask = Button.new()
+		ask.set_owner(get_tree().get_edited_scene_root())
+		ask.set_text(button2.get_text())
+		ask.set('custom_styles/normal', blue)
+		ask.set_ignore_mouse(true)
+		ask.set_anchor(MARGIN_LEFT, 1, false) 
+		get_parent().get_node("ScrollContainer/VBoxContainer").add_child(ask)
+		
+		var reply = Button.new()
+		reply.set_owner(get_tree().get_edited_scene_root())
+		reply.set_text("You wot m8?")
+		reply.set("custom_colors/font_color",Color(0,0,0))
+		reply.set('custom_styles/normal', grey)
+		reply.set_ignore_mouse(true)
+		get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
+		
+		button1.set_text("Oh, I'm taking a Bio class")
+		button2.set_text("R u a guy?")
+	
+	
+	
