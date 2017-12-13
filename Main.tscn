@@ -85,4 +85,11 @@ enabled_focus_mode = 2
 shortcut = null
 flat = false
 
+[node name="reply_timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 4.0
+one_shot = true
+autostart = false
+
 
