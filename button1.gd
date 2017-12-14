@@ -140,7 +140,7 @@ func _process(delta):
 			get_tree().change_scene("res://AllBy.tscn")
 		elif(traversal == "22121" or traversal == "22122"):
 			#stabbed
-			get_tree().change_scene("res://Sausage.tscn")
+			get_tree().change_scene("res://FunnyLaugh.tscn")
 		elif(traversal == "22211" or traversal == "22212" or traversal == "22221" or traversal == "22222"):
 			#good
 			get_tree().change_scene("res://ending.tscn")
