@@ -95,11 +95,43 @@ func _process(delta):
 			button_relay("Sure", "Please accept, I'll make up for it", "Yeah, you better be")
 		elif(traversal == "222"): #tell me your name
 			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		#-------------------------------------4th stage
+		elif(traversal == "1111"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1112"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1121"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1122"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1211"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1212"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1221"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1222"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2111"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2112"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2121"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
 		elif(traversal == "2122"):
-			#true end
-			pass
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2211"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2212"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2221"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "2222"):
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
 		else:
-			pass #bad end
+			#bad end
+			pass
+		
 
 func button_relay(girl_reply, next_choice_1, next_choice_2):
 	if (int(time_now.get_time_left()) == 1):
