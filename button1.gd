@@ -84,17 +84,17 @@ func _process(delta):
 		elif(traversal == "112"): #calm tits
 			button_relay("They're being like diamonds, lad", "^ Perfect women don't exi...", "Let's mine those...")
 		elif(traversal == "121"): #reason
-			button_relay("What reason", "To be special together", "Meet me and I tell you")
+			button_relay("What reason", "To be special together", "Meet me and I'll tell you")
 		elif(traversal == "122"):#sticks on tinder
 			button_relay("Hey f*** you", "I'm just joking", "Do it IRL!")
 		elif(traversal == "211"):#fast learner
 			button_relay("Action is always better than theory", "I'm good at acting", "Let me show you my BIG BANG theory")
-		elif(traversal == "212"):
-			button_relay("212", "2121", "2122")
-		elif(traversal == "221"):
-			button_relay("221", "2211", "2212")
-		elif(traversal == "222"):
-			button_relay("222", "2221", "2222")
+		elif(traversal == "212"):#want me to teach
+			button_relay("Yes master", "Oh right, buy the text book on Amazon for $69", "You need to meet your master right now")
+		elif(traversal == "221"):#being impolite
+			button_relay("Sure", "Please accept, I'll make up for it", "Yeah, you better be")
+		elif(traversal == "222"): #tell me your name
+			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
 		elif(traversal == "2122"):
 			#true end
 			pass
