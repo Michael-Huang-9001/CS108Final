@@ -10,6 +10,10 @@ var stage = 0
 var grey
 var blue
 
+var traversal = ""
+
+onready var karma = 0
+
 func _ready():
 	grey = StyleBoxFlat.new()
 	blue = StyleBoxFlat.new()
@@ -27,6 +31,7 @@ func _ready():
 func on_pressed1():
 	logo.hide()
 	#press1 = 1 # Button 1 is press, reset to 0 every check
+	traversal = traversal + "1"
 	press = 1
 	button1.set_disabled(true)
 	button2.set_disabled(true)
@@ -42,6 +47,7 @@ func on_pressed1():
 
 func on_pressed2():
 	logo.hide()
+	traversal = traversal + "2"
 	button1.set_disabled(true)
 	button2.set_disabled(true)
 	var ask = Button.new()
@@ -55,29 +61,59 @@ func on_pressed2():
 	press = 2
 	
 func _process(delta):
-	print(int(time_now.get_time_left()) )
+	#print(traversal)
+	print(int(time_now.get_time_left()))
 	
 	if(int(time_now.get_time_left()) == 1):
-		if(stage == 0 && press == 1):
+		# 1 = left, 2 = right
+		if(traversal == "1"):
+			karma = karma + 1
 			button_relay("Bad, can you make it better?", "How bad? My ability is limited", "I know why")
-		elif(stage == 0 && press == 2):
+		elif(traversal == "2"):
 			button_relay("You wot m8?", "Oh, I'm taking a Bio class", "R u a guy?")
-		elif(stage == 1 && press == 1):
-			button_relay("1-Good reply", "1-Good next-good", "1-Good next-bad")
-		elif(stage == 1 && press == 2):
-			button_relay("1-Bad reply", "1-bad next-good", "1-bad next-bad?")
+		elif(traversal == "11"):
+			button_relay("11", "111", "112")
+		elif(traversal == "12"):
+			button_relay("12", "121", "122")
+		elif(traversal == "21"):
+			button_relay("21", "211", "212")
+		elif(traversal == "22"):
+			button_relay("22", "221", "222")
+		elif(traversal == "111"):
+			button_relay("111", "1111", "1112")
+		elif(traversal == "112"):
+			button_relay("112", "1121", "1122")
+		elif(traversal == "121"):
+			button_relay("121", "1211", "1212")
+		elif(traversal == "122"):
+			button_relay("122", "1221", "1222")
+		elif(traversal == "211"):
+			button_relay("211", "2111", "2112")
+		elif(traversal == "212"):
+			button_relay("212", "2121", "2122")
+		elif(traversal == "221"):
+			button_relay("221", "2211", "2212")
+		elif(traversal == "222"):
+			button_relay("222", "2221", "2222")
+		elif(traversal == "2122"):
+			#true end
+			pass
+		else:
+			pass #bad end
 
 func button_relay(girl_reply, next_choice_1, next_choice_2):
-	var reply = Button.new()
-	reply.set_owner(get_tree().get_edited_scene_root())
-	reply.set_text(girl_reply)
-	reply.set("custom_colors/font_color",Color(0,0,0))
-	reply.set('custom_styles/normal', grey)
-	reply.set_ignore_mouse(true)
-	get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
-	button1.set_text(next_choice_1)
-	button2.set_text(next_choice_2)
-	button1.set_disabled(false)
-	button2.set_disabled(false)
-	stage = stage + 1
-	press = 0
+	if (int(time_now.get_time_left()) == 1):
+		time_now.stop()
+		var reply = Button.new()
+		reply.set_owner(get_tree().get_edited_scene_root())
+		reply.set_text(girl_reply)
+		reply.set("custom_colors/font_color",Color(0,0,0))
+		reply.set('custom_styles/normal', grey)
+		reply.set_ignore_mouse(true)
+		get_parent().get_node("ScrollContainer/VBoxContainer").add_child(reply)
+		button1.set_text(next_choice_1)
+		button2.set_text(next_choice_2)
+		button1.set_disabled(false)
+		button2.set_disabled(false)
+		stage = stage + 1
+		press = 0
