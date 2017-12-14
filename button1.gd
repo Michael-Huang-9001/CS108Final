@@ -90,44 +90,44 @@ func _process(delta):
 		elif(traversal == "211"):#fast learner
 			button_relay("Action is always better than theory", "I'm good at acting", "Let me show you my BIG BANG theory")
 		elif(traversal == "212"):#want me to teach
-			button_relay("Yes master", "Oh right, buy the text book on Amazon for $69", "You need to meet your master right now")
+			button_relay("Yes master", "Good, use my affiliate link to buy the text book on Amazon for $69", "It needs at least 2 hours for me to teach you")
 		elif(traversal == "221"):#being impolite
 			button_relay("Sure", "Please accept, I'll make up for it", "Yeah, you better be")
 		elif(traversal == "222"): #tell me your name
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+			button_relay("Jaimie Megan, is that girly nough", "Wow, cute name <3", "Sounds similar to my college professor's name")
 		#-------------------------------------4th stage
-		elif(traversal == "1111"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1112"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1121"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1122"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1211"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1212"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1221"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "1222"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2111"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2112"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2121"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2122"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2211"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2212"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2221"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
-		elif(traversal == "2222"):
-			button_relay("Jamie Mergan, is that girly enough", "Wow, cute name <3", "Sound similar to my college professor's name")
+		elif(traversal == "1111"): #Sure, if that makes you feel better
+			button_relay("Wow, that's really nice of you, let's meet up", "Yay, my address is", "Yeah, it's ur turn to make me")
+		elif(traversal == "1112"): #No, you'll taste my boomstick b4 doing dat
+			button_relay("Meet me and I'll do it", "Sound great, I'll see you at ***", "Time to test our guns, meet me")
+		elif(traversal == "1121"):#^ Perfect women don't exi...
+			button_relay("I can show you my perfectness", "I'd love to see. Meet me at ***", "That's what you should say to me. Let's meet")
+		elif(traversal == "1122"):#Let's mine those...
+			button_relay("If you are brave enough to go deep, do it", "I'm a brave man. Let me show yew", "High risk, high reward, I'm coming")
+		elif(traversal == "1211"):#To be special together
+			button_relay("You're romantic, I think I like you", "You're special, see me at ***", "I'll have special treatment for you")
+		elif(traversal == "1212"):#Meet me and I'll tell you
+			button_relay("I would love to hear", "Meet me, I'll tell you", "Meet me, stretch your ears, I'll scream at them")
+		elif(traversal == "1221"):#I'm just joking
+			button_relay("Bye kid!", "Wait, don't leave me :'(", "You too, beach")
+		elif(traversal == "1222"):#Do it IRL!
+			button_relay("Tell me the place, I'll do it", "Meet me at ***, I'm waiting", "SJSU, where I am get f*** everyday")
+		elif(traversal == "2111"):#I'm good at acting
+			button_relay("I'm good at judging", "I'll act for you, meet me", "I'll get 420/69 from you, see me")
+		elif(traversal == "2112"):#Let me show you my BIG BANG theory
+			button_relay("You mean SMALL BANG theory", "I can re-prove my theory for you, meet me", "For you, every theories becomes LOOSE BANG. Meet me")
+		elif(traversal == "2121"):#Good, use my affiliate link to buy the text book on Amazon for $69
+			button_relay("Good bye, nerd", "Wait, don't leave", "Wait, you can get the discount for using my link")
+		elif(traversal == "2122"):#It needs at least 2 hours for me to teach you
+			button_relay("I am willing to learn, master", "Good girl, meet me at ***", "I will transfer my 'knaledge' to you if you meet me")
+		elif(traversal == "2211"):#Please accept, I'll make up for it
+			button_relay("Make up for me at ***, i'll wait", "I'll see you there", "Hehe, I'll make you up")
+		elif(traversal == "2212"):#Yeah, you better be
+			button_relay("F*** off", "Wait, no, my mistake, not yours", "Don't be triggered")
+		elif(traversal == "2221"):#Wow, cute name <3
+			button_relay("I'm cuter in real life", "I would love to observe, can I come and pick you up", "It's easier to say, meet me at ***")
+		elif(traversal == "2222"):#Sounds similar to my college professor's name
+			button_relay("May be I am, you never know", "If you are, meet me at SJSU Art Building", "You have to see me and make up for my horrible experience")
 		else:
 			#bad end
 			pass
