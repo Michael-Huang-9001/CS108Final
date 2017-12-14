@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sausage.png" type="Texture" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="sausage" type="Sprite" parent="."]
+
+transform/pos = Vector2( 201.584, 272.318 )
+transform/scale = Vector2( 0.314976, 0.314976 )
+texture = ExtResource( 1 )
+
+

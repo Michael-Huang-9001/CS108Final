@@ -95,7 +95,7 @@ autostart = false
 [node name="Timer" type="Timer" parent="."]
 
 process_mode = 1
-wait_time = 2.0
+wait_time = 5.0
 one_shot = false
 autostart = false
 
