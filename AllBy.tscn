@@ -1,26 +1,26 @@
 [gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://laughVid.gd" type="Script" id=1]
-[ext_resource path="res://Vids/laughing.ogv" type="VideoStream" id=2]
+[ext_resource path="res://allBy.gd" type="Script" id=1]
+[ext_resource path="res://Vids/AllBy.ogv" type="VideoStream" id=2]
 
 [node name="Node" type="Node"]
 
 script/script = ExtResource( 1 )
 
-[node name="laugh" type="VideoPlayer" parent="."]
+[node name="allBy" type="VideoPlayer" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 139.0
+margin/top = 151.0
 margin/right = 399.0
-margin/bottom = 430.0
+margin/bottom = 400.0
 stream/audio_track = 0
 stream/stream = ExtResource( 2 )
 stream/volume_db = 0.0
-stream/autoplay = true
+stream/autoplay = false
 stream/paused = false
 expand = true
 

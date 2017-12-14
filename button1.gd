@@ -131,22 +131,22 @@ func _process(delta):
 		# ENDINGS--------------------------------------------------------------
 		elif(traversal == "11121" or traversal == "11122"):
 			#Breaking news
-			pass
+			get_tree().change_scene("res://FunnyLaugh.tscn")
 		elif(traversal == "12211" or traversal == "12212"):
 			# Hello darkness
-			pass
+			get_tree().change_scene("res://Hello.tscn")
 		elif(traversal == "21211" or traversal == "21212"):
 			#All alone
-			pass
+			get_tree().change_scene("res://FunnyLaugh.tscn")
 		elif(traversal == "22121" or traversal == "22122"):
 			#stabbed
-			pass
+			get_tree().change_scene("res://FunnyLaugh.tscn")
 		elif(traversal == "22211" or traversal == "22212" or traversal == "22221" or traversal == "22222"):
 			#good
-			pass
+			get_tree().change_scene("res://FunnyLaugh.tscn")
 		else:
-			#bad end
-			pass
+			get_tree().change_scene("res://FunnyLaugh.tscn")
+			
 		
 
 func button_relay(girl_reply, next_choice_1, next_choice_2):
