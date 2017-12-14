@@ -119,7 +119,7 @@ func _process(delta):
 		elif(traversal == "2121"):#Good, use my affiliate link to buy the text book on Amazon for $69
 			button_relay("Good bye, nerd", "Wait, don't leave", "Wait, you can get the discount for using my link")
 		elif(traversal == "2122"):#It needs at least 2 hours for me to teach you
-			button_relay("I am willing to learn, master", "Good girl, meet me at ***", "I will transfer my 'knaledge' to you if you meet me")
+			button_relay("I am willing to learn, master", "Good girl, meet me at ***", "I will transfer my 'NAWLEDGE' to you if you meet me")
 		elif(traversal == "2211"):#Please accept, I'll make up for it
 			button_relay("Make up for me at ***, i'll wait", "I'll see you there", "Hehe, I'll make you up")
 		elif(traversal == "2212"):#Yeah, you better be
@@ -128,6 +128,22 @@ func _process(delta):
 			button_relay("I'm cuter in real life", "I would love to observe, can I come and pick you up", "It's easier to say, meet me at ***")
 		elif(traversal == "2222"):#Sounds similar to my college professor's name
 			button_relay("May be I am, you never know", "If you are, meet me at SJSU Art Building", "You have to see me and make up for my horrible experience")
+		# ENDINGS--------------------------------------------------------------
+		elif(traversal == "11121" or traversal == "11122"):
+			#Breaking news
+			pass
+		elif(traversal == "12211" or traversal == "12212"):
+			# Hello darkness
+			pass
+		elif(traversal == "21211" or traversal == "21212"):
+			#All alone
+			pass
+		elif(traversal == "22121" or traversal == "22122"):
+			#stabbed
+			pass
+		elif(traversal == "22211" or traversal == "22212" or traversal == "22221" or traversal == "22222"):
+			#good
+			pass
 		else:
 			#bad end
 			pass
