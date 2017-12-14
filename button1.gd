@@ -68,27 +68,27 @@ func _process(delta):
 		# 1 = left, 2 = right
 		if(traversal == "1"):
 			karma = karma + 1
-			button_relay("Bad, can you make it better?", "How bad? My ability is limited", "I know why")
+			button_relay("Bad, can you make it better?", "How bad? My ability is limited", "I know why it's bad")
 		elif(traversal == "2"):
 			button_relay("You wot m8?", "Oh, I'm taking a Bio class", "R u a guy?")
 		elif(traversal == "11"):
-			button_relay("11", "111", "112")
+			button_relay("If I have 2 bullets to kill you and Ajit Pai, I shoot you twice", "Wow, that sounds horrible", "Wow, calm your tits")
 		elif(traversal == "12"):
-			button_relay("12", "121", "122")
-		elif(traversal == "21"):
-			button_relay("21", "211", "212")
-		elif(traversal == "22"):
-			button_relay("22", "221", "222")
-		elif(traversal == "111"):
-			button_relay("111", "1111", "1112")
-		elif(traversal == "112"):
-			button_relay("112", "1121", "1122")
-		elif(traversal == "121"):
-			button_relay("121", "1211", "1212")
-		elif(traversal == "122"):
-			button_relay("122", "1221", "1222")
-		elif(traversal == "211"):
-			button_relay("211", "2111", "2112")
+			button_relay("What do you know", "Same reasons that make us here", "The reason makes you find sticks on Tinder")
+		elif(traversal == "21"):#Bio Class
+			button_relay("They teach sex in bio class, that's weird", "Yeah, and I'm a fast learner", "Hell yeah, want to teach u how to do")
+		elif(traversal == "22"): #R u a guy
+			button_relay("I'm more girly than yo mama", "My appology for being impolite", "Prove it, tell me your name")
+		elif(traversal == "111"):#Sound horrible
+			button_relay("Can you let me do it?", "Sure, if that makes you feel better", "No, you'll taste my boomstick b4 doing dat")
+		elif(traversal == "112"): #calm tits
+			button_relay("They're being like diamonds, lad", "^ Perfect women don't exi...", "Let's mine those...")
+		elif(traversal == "121"): #reason
+			button_relay("What reason", "To be special together", "Meet me and I tell you")
+		elif(traversal == "122"):#sticks on tinder
+			button_relay("Hey f*** you", "I'm just joking", "Do it IRL!")
+		elif(traversal == "211"):#fast learner
+			button_relay("Action is always better than theory", "I'm good at acting", "Let me show you my BIG BANG theory")
 		elif(traversal == "212"):
 			button_relay("212", "2121", "2122")
 		elif(traversal == "221"):
